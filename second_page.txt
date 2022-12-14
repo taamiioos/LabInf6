@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+\usepackage[14pt]{extsizes} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{setspace,amsmath}
+\usepackage{amsmath}
+\DeclareSymbolFontAlphabet{\gr}{Greek}
+\usepackage{mathtools}
+\usepackage[left=20mm, top=15mm, right=15mm, bottom=5mm, nohead, \footskip=20mm]{geometry}
+\begin{document}
+\begin{flushright}
+\normilize{Я. А. Смординский}
+\end{flushright}
+\begin{center}
+\hspace{-50mm}\Huge{\textbf{\textsl{\color{Cerulean}{П}}охожие}}\\
+\hspace{30mm}\Huge{\textbf{\textsl{движения}}}\\
+\vspace{15mm}
+\end{center}
+\setlength{\columnsep}{1cm}
+
+
+\begin{multicols}{2}
+
+\normalsize{Существует ряд механических движений, которые хотя и различны, но описываются одними и теми же формулами. Поэтому, если мы выясним, как меняются какие-то величины при одном движении, можно сделать выводы для аналогичных. Расскажем о двух таких движениях.}\\
+
+\hspace{5mm}\normalsize{\color{Blue}{1. Гармонические колебания}}\\
+
+\par\normalsize{Между движением по окружностии и гармоническим движением можно установить полезное соответствие. Рассмотрим материальную точку, которая движется равномерно по окружности. Ее скорость равна V и направлена по касательной к окружности. Если радиус окружности обозначить через R, то центростремительное ускорение точки равно $\frac{V^2}{R}$ и направленно по радиусу к центру (рис. 1).}\
+\par\normalsize{Посмотрим, как движется проекция точки на диаметр окружности. Из рисунка ясно, что если положение точки на окружности задается углом $\phi$, то положение ее проекции определяется координатой}\
+\par\hspace{20mm}\normalsize{x=$R\cos\phi.$ \hspace{25mm}(1)}\par
+\normalsize{Проекция скорости на диаметр (обозначем ее через u) равна}\par
+\par\hspace{20mm}\normalsize{u=-$v\sin\phi.$ \hspace{25mm}(2)\\
+и, наконец, проекция ускорения\par
+\hspace{20mm} a =-$\frac{V^2}{R}\cos\phi.$ \hspace{20mm}(3)}
+\columnbreak
+\\
+\normalsize{Из формул (1) и (3) легко получить, что\par
+\hspace{20mm} a=-$(\frac{V^2}{R^2})X.$ \hspace{20mm}(4)}\\
+\par\normalsize{С таким же ускорением двигалась бы материальная точка с массой m под действием силы\par
+\hspace{20mm} F=am=-$(\frac{V^2}{R^2})$xm.\hspace{10mm}(5)}\\
+\par\normilize{ Такая сила, пропорциональная координате,называется гармонической,а движение под действием такой силы-гармоническим движением.\par
+    Введем вместо линейной скорости угловую $\omega=\frac{V}{R}$ (в рад/сек). Тогда \\$\phi=\omega t$\par
+$x=R\cos\omega t$, $u=\omega R \sin \omega t$,\par
+\hspace{15mm} a=-$\omega^2 R \cos \omega t$.}\\
+\\
+\includegraphics[width=100mm,scale=0.5]{img.png} 
+\end{multicols}
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+\usepackage[14pt]{extsizes} 
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{setspace,amsmath}
+\usepackage[left=20mm, top=15mm, right=15mm, bottom=15mm, nohead, \footskip=10mm]{geometry}
+ 
+\begin{document} 
+ 
+\begin{center}
+\vspace{3cm}\hfill \break
+\footnotesize{Федеральное государственное автономное образовательное учреждение высшего образования} 
+\large{\bfseries Национальный исследовательский университет ИТМО}\\
+\large{\bfseries Факультет программной инженерии и компьютерной техники}\\
+\vspace{7cm}
+
+\large{Лабораторная работа №6}\\
+\large{Работа с системой компьютерной вёрстки TEX}\\
+\large{Вариант 19}\\
+\vspace{4cm}
+\end{center}
+
+\begin{flushright}
+\normalsize{Выполнила: Митина Татьяна}\\
+\normalsize{Группа P3121}\\
+\normalsize{Преподаватель: Болдырева Елена Алекснадровна}\\
+\end{flushright}
+
+\begin{center} 
+\vspace{6cm}\normalsize{Санкт-Петербург 2022 г.}
+\end{center}
+
+\thispagestyle{empty}
+\end{document}

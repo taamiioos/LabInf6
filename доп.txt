@@ -1,0 +1,92 @@
+\documentclass[10pt]{beamer}
+\usepackage{graphicx}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[english,russian]{babel}
+\begin{document}
+
+\newpage
+
+\vspace{7ex}
+
+\centering\includegraphics[width=1.09\linewidth]{paints/dopp1.png}
+
+\begin{flushleft}
+\textbf{\textcolor{green}{Алфавит}{– конечное множество различных знаков (букв), символов, для которых определена операция конкатенации (присоединения символа к символу или цепочке символов). \\}}
+\textbf{\textcolor{green}{Знак(буква)}{– любой элемент алфавита (элемент x алфавита X, где x є X). \\}}
+\textbf{\textcolor{green}{Слово}{– конечная последовательность знаков (букв) алфавита. \\}}
+\textbf{\textcolor{green}{Словарь(словарный запас)}{– множество различных слов над алфавитом.}}
+\end{flushleft}
+
+\newpage
+
+\vspace{7ex}
+\centering\includegraphics[width=1.09\linewidth]{paints/dopp2.png}
+\begin{flushleft}
+\textbf{\textcolor{green}{Кодирование (модуляция) данных}{— процесс преобразования символов алфавита Х в символы алфавита Y. \\}}
+\textbf{\textcolor{green}{Декодирование (демодуляция)}{— процесс, обратный кодированию. \\}}
+\textbf{\textcolor{green}{Символ}{— наименьшая единица данных, рассматриваемая как единое целое при кодировании/декодировании. \\}}
+\textbf{\textcolor{green}{Кодовое слово}{– последовательность символов из алфавита Y, однозначно обозначающая конкретный символ алфавита Х. \\}}
+\textbf{\textcolor{green}{Средняя длина кодового слова}{– это величина, которая вычисляется как взвешенная вероятностями сумма длин всех кодовых слов. \\}}
+\end{flushleft}
+\centering\includegraphics[width=2cm, height = 1cm]{paints/dopp3.png}
+\begin{flushleft}
+\textbf{Если все кодовые слова имеют одинаковую длину, то код называется \textcolor{green}{равномерным} (фиксированной длины). 
+Если встречаются слова разной длины, то – \textcolor{green}{неравномерным} (переменной длины).}
+\end{flushleft}
+
+\newpage
+
+\vspace{7ex}
+\centering\includegraphics[width=1.08\linewidth]{paints/dopp4.png}
+\begin{flushleft}
+\textbf{\textcolor{green}{Сжатие данных}{— процесс, обеспечивающий уменьшение объёма данных путём 
+сокращения их избыточности. \\}}
+\textbf{Сжатие данных — частный случай кодирования данных. \\}
+\textbf{\textcolor{green}{Коэффициент сжатия}{— отношение размера входного потока к выходному потоку. \\}}
+\textbf{\textcolor{green}{Отношение сжатия}{— отношение размера выходного потока ко входному потоку. \\}}
+\vspace{2ex}
+\textbf{\textcolor{gray}{ \\ Пример. Размер входного потока равен 500 бит, выходного равен 400 бит. \\
+Коэффициент сжатия = 500 бит / 400 бит = 1,25. \\
+Отношение сжатия = 400 бит / 500 бит = 0,8. \\}}
+\vspace{4ex}
+\textbf{ \\ Случайные данные невозможно сжать, так как в них нет никакой избыточности. \\} 
+\end{flushleft}
+
+\newpage
+
+\vspace{7ex}
+\centering\includegraphics[width=1.08\linewidth]{paints/dopp5.png}
+\begin{flushleft}
+\textbf{\textcolor{green}{Сжатие без потерь}{(полностью обратимое) — сжатые данные после декодирования (распаковки) не отличаются от исходных. \\}}
+\textbf{\textcolor{green}{Сжатие с потерями}{(частично обратимое) — сжатые данные после декодирования (распаковки) отличаются от исходных, так как при сжатии часть исходных данных была отброшена для увеличения коэффициента cжатия. \\}}
+\vspace{6ex}
+\textbf{\textcolor{green}{Статистические методы}{— кодирование с помощью усреднения вероятности появления элементов в закодированной последовательности. \\}}
+\vspace{6ex}
+\textbf{\textcolor{green}{Словарные методы}{— использование статистической модели данных для разбиения данных на слова с последующей заменой на их индексы в словаре. \\}}
+\end{flushleft}
+
+\newpage
+\vspace{7ex}
+\centering\includegraphics[width=1.08\linewidth]{paints/dopp5.png}
+\begin{flushleft}
+\textbf{Причины: \\}
+\begin{itemize}
+    \item\footnotesize{Альфа-частицы от примесей в чипе микросхемы.}
+    \item\footnotesize{Нейтроны из фонового космического излучения.}
+\end{itemize}
+    \textbf{Частота единичных битовых ошибок (на 1 GB): \\}
+\begin{itemize}
+    \item\footnotesize{От 1 раза в час до 1 раза в тысячелетие \\ (по данным исследования Google получилось ~1 раз в сутки).}
+\end{itemize}
+    \textbf{Способы обработки данных: \\}
+\begin{itemize}
+    \item\footnotesize{Использовать полученные данные без проверки на ошибки.}
+    \item\footnotesize{Обнаружить ошибку, \\ выполнить запрос повторной передачи поврежденного блока.}
+    \item\footnotesize{Обнаружить ошибку и отбросить поврежденный блок.}
+    \item\footnotesize{Обнаружить и исправить ошибку.}
+    \item\footnotesize{Тройная модульная избыточность.}
+\end{itemize}
+\end{flushleft}
+\end{document}
